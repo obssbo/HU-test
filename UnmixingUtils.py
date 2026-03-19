@@ -37,6 +37,6 @@ class UnmixingUtils:
         N = np.size(self.S, 0)
         S_est = S_est[:, sor]
         rmse = self.S - S_est
-        rmse = rmse * rmse;
+        rmse = rmse * rmse
         rmse = np.mean(np.sqrt(np.sum(rmse, 0) / N))
         return rmse
